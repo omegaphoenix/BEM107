@@ -1,0 +1,295 @@
+\documentclass[11pt]{article}
+%Gummi|065|=)
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{algorithm}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{bbm}
+\usepackage{geometry}
+\usepackage{comment}
+\geometry{letterpaper, margin=1in}
+\title{\textbf{BEM 107: Applied Corporate Finance and Investment Banking}}
+\author{Justin Leong}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\section{Lecture 1 - 3/31/2016}
+What does the Professor do?
+\\serve as a finance expert in high stakes financial litigation; BoA Professor of Finance at UCLA, permanent visitor at Caltech; San Marino Business Partners - hedge funds in risky technology companies; (2010 - Cornell Investors)
+\\\\Where do companies get a bunch of money to buy securities?
+\\Repo(repurchase) - buy security and immediately sell to someone else with the agreement to buy it back the next day at cost + overnight interest rate
+\\\\What happens if a bank refuses to participate in repo financing anymore?
+\\The company dies
+\\\\How did they make money last year?
+\\Shorted GoPro because it has low barrier to entry; Bought Apple options since he thought it was overvalued
+\\\\Where do values of companies come from?
+\\consumable cash; (e.g. dividends or future cash flows)
+\\\\What are the benefits of putting a solar panel system on your roof?
+\\cash grant, accelerated depreciation(not a company so you don't get it), performance based incentives(based on how much energy you generate - have to fill out a bunch of forms every year); now you just lease solar panels for 90\% of normal Edison energy rate (Sequoia Pacific Solar buys the installations)
+\\\\What do you need to write off depreciation?
+\\lots of earnings (Google + Solar City = Sequoia Pacific Solar)
+\\\\What are the two big disputes in solar?
+\\valuation of solar panel systems; net negative customers don't pay to maintain grid
+\\\\What is the goal of corporations?
+\\to maximize shareholder value
+\\\\How do you do it?
+\\nobody knows
+\\\\What is divestment?
+\\don't invest in companies like Exxon Mobil which contribute to climate change
+\\\\What does the Caltech Board of Trustees do?
+\\fundraise or donate money
+\\\\What does the Board of Directors do?
+\\fire management
+\\\\What do you do if the company isn't maximizing shareholder values?
+\\get 50\% of shareholders to choose a board of directors to hire a new management
+\\\\How do you do that with Google?
+\\you can't because Larry Page and his buddy have Class B shares which have 50 times the voting rights per share
+\\\\What is the problem of stationarity?
+\\Is the underlying problem itself stable
+\\\\What is a superior investor?
+\\someone who can generate excess return given a level of risk
+\\\\What do financial markets allow?
+\\demand to decide what to invest in and allows savers to invest
+\\\\What does Yahoo say about the Beta of Tesla?  What does Google say?
+\\0.985412; 1.25
+\\\\What is goodwill?
+\\book value of companies acquired that aren't in their assets
+\\\\What doesn't appear on the balance sheet?
+\\internally generated technologies(intangible value) such as Google's search technology
+\\\\
+
+\begin{description}
+\section{Lecture 1 - 3/31/2016}
+\item[How much is Snap worth today?]
+  20 billion
+  started by professor's godson (owns 25\%)
+\item[what does the professor do?]
+  expert witness on complex financial matters
+\item[Why did Professor Cornell get hired as an expert witness?]
+  financial institution sold derivative to company and company claimed institution didn't explain risk;
+  guys on 26th floor knows (senior executive said bunch of Chinese and Indian guys doing derivatives)
+\item[What is needed for the class?]
+  bring laptop
+\item[What i]
+  started in 2008;
+  \$5 million to \$31 million;
+  write insurance on Berkshire Hathaway (expert witness for Buffett);
+  aggressively taking equity;
+  Gene Fama referred to investment strategy as ``shit, dumb luck'';
+  believes that current state of investment world is terrible
+\item[Feynman story]
+  mechanical drawing class;
+  some joker picked up a French curve and asked whether curves had special formula;
+  curve is made that lowest point on each curve was tangent to horizon;
+  knowledge is fragile
+\item[What does it mean to short?]
+  borrow shares and sell them;
+  you have to pay dividends
+\item[Why do you invest?]
+  to get cash
+\item[How does valuation work?]
+  you put cash in now to an investment and in the future you get more cash out;
+  time and risk
+\item[What is asset pricing?]
+  developing mathematical theories about how assets are priced;
+  $P = E(Mx)$;
+  X is  the payoff, $X_{t+1}$ is random;
+  given a security and probability of payoffs and utility functions, we can figure out how assets will be priced
+\item[How much is Amazon's market cap?]
+  428 billion;; 898.28 per share;
+  only beat by Apple, Google, and Microsoft
+\item[What is Feynman's Los Alamos story?]
+  asked how would you rate your sense of well being by the government (64);
+  psychologist said is that good or bad;
+  Feynman asked that is the question
+\item[What is the idea of investing?]
+  trying to get superior returns based on analysis of a company;
+  1. have to disagree with market (otherwise just buy index fund);
+  2. be right
+  3. market comes to realize you are right
+\item[What is Cornell's position on Tesla?]
+  short - he thinks it is worth 150
+\item[What is the difference between asset pricing and investing?]
+  Asset pricing is a math theory that explains how market prices are set.
+  Investing is about the business narrative, not the finance model
+\item[What is the Snap narrative?]
+  young people and their kids will stay users and ads will work
+\item[What is the worst competitive advantage?]
+  technological advances (because it quickly disappears)
+\item[What is the best competitive advantage?]
+  getting something into minds of billions of people that influence their behavior (Coke and Pepsi)
+\item[What are the two biggest data providers?]
+  Google and Yahoo - financial data different but they both add up to the same number (Goldman Sachs);
+  more reliable to go to Goldman Sachs' website (be skeptical about the inaccuracies of the data);
+\item[Homework: Figure out what Goldman Sachs does?]
+  world's leading financial firm in terms of sophistication
+\item[What is the problem with data in finance?]
+  non-stationarity; can't project past into future;
+  conflicts with sample size (go as far back as you can)
+\item[Assumptions]
+  every asset's return depends in a linear fashion on a set of systematic factors, also has idiosyncratic (not related to factors) volatility;
+  sensitivities to factors differ across assets and are reasonably constant over time;
+\item[What risk is diversifiable and what is not?]
+  the idiosyncratic risk is diversifiable;
+  the systematic risk which depends on beta is undiversifiable
+\item[What are possible systematic risks?]
+  business cycle - how the economy is doing;
+  investor confidence;
+  interest rates;
+  inflation - short-term unexpected inflation, long-run inflationary expectations
+\item[What is the return if all the factors are 0?]
+  risk free rate
+\item[What happens if you have two different portfolios such that every factor has equal weight but they have different return?]
+  arbitrage;
+  to avoid arbitrage, expected returns have to have certain form
+\item[What are two forms of the Arbitrage Pricing Theory?]
+  CAPM and Fama-French 3 Factor model;
+  316 factors have been published as significant
+\item[What is the objective of companies?]
+  maximize value for shareholders
+\item[What is the Business Judgement Rule?]
+  court accepts what the business is doing is appropriate unless it is too far-fetched
+\item[What is a firm?]
+  corporate charter and nexus of contracts that defines the firms;
+  management (board of directors, e.g. Al Gore for Apple; select senior management);
+  suppliers and distributors;
+  partners;
+  lenders and bondholders;
+  shareholders: residual risk bearers;
+  government tax collectors;
+  customers;
+  non-management employees
+\item[Why can't Brad Cornell sell Apple?]
+  taxes would be 40\% of \$750,000 since it doubled
+  hedge but selling calls;
+\item[What does finance look like?]
+  savers store in real investment;
+  finance is net zero
+\item[How did Cornell finance his undertaking in writing a book?]
+  a pair of blue jeans(\$40 in Germany but \$500 in Prague) would buy you a hotel room and a nice dinner
+\end{description}
+
+\begin{description}
+\section{Lecture 2 - 4/13/2016}
+\item[What do you need to do fundamental analysis?]
+  1. Disagree with market.
+  2. Be right.
+  3. Market comes to realize you are right.
+\item[What is an efficient market?]
+  market price reflects all private and public information
+\item[Why is the efficient market self contradictory?]
+  because no one would do research;
+  market must be inefficient enough that the best people can be right and make money
+\item[How do you diversify?]
+  market portfolio
+\item[What did Bill Sharpe discover?]
+  active investors and passive investors make the same before costs;
+  active investors should make less since they have higher costs
+\item[Why did indexes beat stock pickers even over 15 years?]
+  because of expenses - duh
+\item[What are the two ways to overperform?]
+  fundamental analysis or quantitative analysis (The D. E. Shaw  Group managed \$40 billion and beats market consistently; Renaissance Technologies (rentec) even more successful (James Simons))
+\subsection{Luck vs Skill - Brent Cahill, Mojo, Nick, Ricky}
+\item[Background]
+  Is active management worth the cost?
+  Is skill present? Data suggests it is. Active portfolios have a few constant over/under performers.
+\item[What are the 3 forms of market efficiency?]
+  Weak - market uses all past and current information. Past rates don't affect future returns.
+  Semi-Strong - Quick reaction to public information
+  Strong - Market reflects all public and private performance
+\item[How do you solve for luck versus skill?]
+  assume performance is skill plus luck;
+  assume skill and luck is normally distributed with skill having a variable mean;
+  investing performance mostly based on luck
+\item[How do you do well on an exam?]
+  know a lot or be lucky because you don't know everything - the test might just be in the area you knew;
+  $E[S|P=p_{obs}] = \mu_S + \frac{\sigma_S^2}{\sigma_S^2 + \sigma_L^2} (p_{obs} - \mu_S)$
+\item[What happens when you buy Tesla?]
+  you get rights for future dividends;
+  value comes from future dividends;
+  take into account time and risk
+\item[Why are companies incorporated in Delaware?]
+  Corporate Law - judges are sophisticated and experienced in corporate law
+\item[What happens to remaining stock when company buys most of a company and merges it in?]
+  investors have appraisal right (forgo taking money and file appraisal lawsuit in Delaware - could get more money);
+  lawsuit costs \$5-10 million;
+  Michael Dell took company back private by meeting with Starlight and buying it back and an appraisal lawsuit was filed
+\item[How does Delaware value money?]
+  break time into 3 buckets - specific forecasts (management comes up with it and it goes out 5 years);
+  transition (5 years - take forecasts and converge linearly to steady state);
+  terminal year in 10 years (assumes company in steady state and experiencing constant growth)
+\item[Who are active investors buying/selling from?]
+  other active investors
+\item[What is the upper bound for a steady state company?]
+  long-run economic growth (hard to predict short run but can predict long run);
+  growth in GDP (nominal and real);
+  Hungary - 50\% inflation per day - 1 pengo in 1945 equal to $10^{23}$ in 1946
+\item[What are currency reforms?]
+  reset value
+\item[What determines real growth?]
+  population (-1 to 3-4\% (number of hours available to work) and productivity (capital and technology)
+\item[How does output increase with capital?]
+  output increases a lot at first but then tails off
+\item[What is the most important date?]
+  1665 - closed Cambridge University because of the plague;
+  sent Isaac Newton home;
+  date that humanity realizes that there are laws of nature that can be written down mathematically
+\item[How much did standard of living improve from 200,000 BC to 5,000 BC?]
+  maybe 10 times; tiny rate of growth (no economic growth until after 1665)
+\item[What does Stephen Hawking say about 1665?]
+  it's like giving a 3 year old a AK47
+\item[What is long run inflation forecast?]
+  2\%
+\item[What is long run population growth forecast?]
+  0.5\%
+\item[What is long run real growth forecast?]
+  2\%
+\item[What will be long run growth in GDP?]
+  4.5\%
+\item[What is the average time copanies are on CRSP?]
+  7 years
+\item[What is the probability for a randomly selected stock to outperform treasury bills?]
+  42\%
+\item[What percent of stocks account for most growth in GDP?]
+  4\%
+\item[How do companies grow?]
+  inflation or investment
+\item[What is inflation?]
+  unit of currency shrinks; today we measure stuff in 2009 US dollar
+\item[What is the growth rate of a company?]
+  amount reinvested times return on investment (real terms);
+  $g = k * r$;
+  $k = g/r = 0.0125/0.1125 = 11.1\%$ for a company assuming 1.25\% real growth and 11.25\% return on investment;
+  11.25\% WACC (8.75\%) + return (4.5\%) minus inflation (2\%)
+\item[What is EBITDA?]
+  earnings before taxes, depreciation, and amortization
+\item[What is NOPAT?]
+  net operating profit after tax (EBIT minus tax)
+\item[What is net working capital?]
+  accounts payable (source of cash) and accounts receivable (drain of cash)
+\item[What is unlevered free cash flow?]
+  amount of cash available to investors (NOPAT minus cash needed to grow business)
+\item[What is Tesla's free cash flow?]
+  negative - doing research, building factories and hiring workers for Model 3 (\$35,000)
+\item[What is enterprise value?]
+  operating value of the company;
+  value of its total operations;
+\item[How do you get stock price from enterprise value?]
+  subtract debt and add cash
+\item[what is the discount rate?]
+  8.75\%;
+  if growth rate is bigger than discount rate, then transition period is too short
+\item[What model was used?]
+  Solera management projects
+\item[What was the mistake in the DCF analysis?]
+  37\% plowback whcih is much larger than 11.1\%
+\item[How do you decompose a stock price into its component parts?]
+  projects in place \& growth options
+\end{description}
+\end{document}
